@@ -1,0 +1,10 @@
+tftp:
+  image: jumanjiman/tftp-hpa
+  ports:
+    - "69:69"
+
+build:
+  image: pottava/moby
+
+storage:
+  build: . 
